@@ -9,6 +9,9 @@ const express = require('express'),
     adminRoutes = require('./server/routes/adminRoutes'),
     app = express();
 
+
+
+
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 // Point static path to dist
@@ -30,3 +33,10 @@ app.use('/v1/admin', adminRoutes);
 app.listen(config.production.port, function () {
     console.log(`App listening on port ${config.production.port}`);
 });
+
+
+
+
+global.sendgridHelper = require('sendgrid').mail;
+global.sendgridObj = require('sendgrid')('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');/* All config set to be in env file and then no need to hardcode it.*/
+global.ExternalService = require("./helpers/common-service");
