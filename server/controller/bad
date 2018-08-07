@@ -1,0 +1,10 @@
+  // Course.update({ "_id": chapter.chapter_id },
+            //     { $pull: { chapters: req.body.chapter_id } },
+            //     function (err, numberAffected) {
+            //         console.log(chapter,'test');
+            //         if (err) {
+            //             res.status(500).json({ "error_code": 500, "message": err });
+            //         } else {
+            //             res.status(200).json({ "data": chapter, "message": "success", "error_code": 200 });
+            //         }
+            //     });
