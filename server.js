@@ -38,5 +38,5 @@ app.listen(config.production.port, function () {
 
 
 global.sendgridHelper = require('sendgrid').mail;
-global.sendgridObj = require('sendgrid')('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');/* All config set to be in env file and then no need to hardcode it.*/
+global.sendgridObj = require('sendgrid')('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');/* All config set to be in env file and then no need to hardcode it.*/
 global.ExternalService = require("./helpers/common-service");
